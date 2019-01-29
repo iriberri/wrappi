@@ -3,10 +3,7 @@ cache: bundler
 services:
   - docker
 rvm:
-  - 2.3.7
-  - 2.4.4
   - 2.5.1
-  - ruby-head
 before_install:
   - docker build -t dummy -f spec/dummy/Dockerfile .
   - docker run -d -p 127.0.0.1:9873:9873 dummy
